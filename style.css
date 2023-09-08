@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: black;
+    border-radius: 0px 0px 40px 40px;
+}
+
+nav a {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    flex: 1;
+    color: #00ff00;
+    font-size: 200%;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+}
+  
+nav a span::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+}
+  
+nav a:hover span::after {
+    width: 100%;
+}
